@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+h1, h2 ,h3, h4, h5, h6, .h1-project{
+    font-family: 'Recursive',
+    sans-serif;
+    color: white;
+}
+
+.h1-project span{
+    background-color: black;
+    padding: 8px 12px 12px 12px;
+}
+
+.h1-project {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.h1-project:before,
+.h1-project:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+.h1-project:before {
+    left: -2.5px;
+}
+
+.h1-project:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.h1-project:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.h1-project:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.h1-project a{
+    text-decoration: none;
+    color: white;
+}
+
+.section1
+{
+     /* Full height */
+     height: 100%;
+}
+.section2 {
+    /* Full height */
+    min-height: 100%;
+    background-color: white;
+}
+
+/* #projects{
+    background-image: url("../img/side-building.jpeg");
+
+    min-height: 100%;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+.projects-h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.section3 {
+    /* Full height */
+    min-height: 100%;
+
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../img/pexels-mohamed-abdelsadig-3215158.jpg");
+
+    /* Full height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("../img/pexels-flickr-149369.jpg");
+
+    /* Full height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.web-dev h2, .main-name h1, .bscs h6{
+    background-color: black;
+    padding: 10px;
+}
+
+.social-icons {
+    color: #313437;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media (max-width:767px) {
+    .social-icons {
+        padding: 50px 0;
+    }
+}
+
+.social-icons i {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: black;
+}
+
+.social-icons i:hover{
+    color: black;
+    background-color: white;
+}
+
+.social-icons.bot div a{
+    background-color: black;
+    padding: 15px 20px;
+    opacity: 0.8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.social-icons.bot div a:hover {
+    opacity: 1;
+}
+
+form .row {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 4px;
+    color: black;
+}
+
+form input, textarea{
+    background-color: transparent;
+    font-family: Georgia,
+    'Times New Roman',
+    Times,
+    serif;
+    color: white;
+}
+
+form .form-control{
+    border-radius: 4px;
+    box-shadow: 5px 10px 1px rgba(0, 0, 0, 0.7);
+    outline: none;
+    color: inherit;
+    padding-left: 12px;
+    height: 42px;
+    border: 1px solid black;
+}
+
+form .form-control:focus {
+    border: 2px solid black;
+}
+
+form textarea.form-control{
+    min-height: 100px;
+    max-height: 260px;
+    padding-top: 10px;
+    resize: vertical;
+}
+
+form .btn {
+    padding: 16px 32px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    outline: none !important;
+}
+
+form .btn:active {
+    transform: translateY(1px);
+}
+
+form .btn-primary {
+    background-color: white !important;
+    margin-top: 15px;
+    color: black;
+}
+
+form .btn:hover {
+    opacity: 1;
+    color: white !important;
+    background-color: black !important;
+    border: 1px solid white;
+}
+
+footer{
+    background: black;
+}
+
+.photos a, h4{
+    color: black;
+}
+
+.photos img{
+    /* -webkit-filter: grayscale(100%); */
+    /* Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%); */
+    max-height: 300px;
+    /* max-width: 500px; */
+    border: 1px solid black;
+    opacity: 0.7;
+}
+
+.photos img:hover{
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1;
+}
