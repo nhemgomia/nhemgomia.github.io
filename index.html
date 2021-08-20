@@ -348,8 +348,12 @@
     <!-- Footer -->
     <footer class="page-footer font-small text-white pt-3 pb-3">
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#" class="text-decoration-none text-white"> nhemgomia</a>
+        <div class="footer-copyright text-center py-3">
+            © 
+            <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>
+            <a href="#" class="text-decoration-none text-white">, nhemgomia</a>
             <!-- <a href="./todo" class="text-decoration-none text-white"> todo</a> -->
         </div>
         <!-- Copyright -->
